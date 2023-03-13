@@ -5,11 +5,16 @@ namespace App\Http\Controllers\Guest;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
+// Models
+use App\Models\Train;
+
 class PageController extends Controller
 {
     public function index() {
 
-        return view('welcome');
+        $trains = Train::where('departure_date', '2023-03-13')->get();
+
+        return view('welcome', compact('trains'));
         
     }
 }

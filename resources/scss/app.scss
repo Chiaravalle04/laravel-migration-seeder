@@ -7,22 +7,74 @@
 // Flex Classes
 @import './partials/flex';
 
-// General Rules
-body {
-    height: 100vh;
-    background-color: lightcoral;
-}
+// Variables
+@import './partials/variables';
 
+// General Rules
 .main-container {
     width: 80%;
+    height: 100%;
     margin: 0 auto;
-    text-align: center;
-    img {
-        width: 300px;
-        height: 300px;
-    }
+}
+
+// Header
+header {
+    height: 80px;
+    background-color: $bgColor;
     h1 {
-        color: white;
-        margin: 50px 0;
+        color: $mainColor;
+    }
+}
+
+// Main 
+main {
+    min-height: calc(100vh - 80px);
+    background-color: $bgColor;
+    padding-top: 50px;
+    .container-trains {
+        width: 100%;
+        .card-train {
+            min-height: 100px;
+            border-radius: 15px;
+            padding: 20px;
+            margin-bottom: 25px;
+            background-color: $secondColor;
+            box-shadow: 0px 0px 15px 3px rgba(0,0,0,0.38);
+            .header-card {
+                padding: 15px;
+                border-bottom: 1px solid black;
+                span {
+                    color: $mainColor;
+                    margin-left: 15px;
+                    font-size: 15px;
+                }
+            }
+            .main-card {
+                margin-top: 15px;
+                .departure, .arrival, .info {
+                    text-align: center;
+                    h3 {
+                        color: $mainColor;
+                        margin-bottom: 15px;
+                        font-size: 20px;
+                    }
+                    h4 {
+                        font-size: 20px;
+                    }
+                }
+                button {
+                    display: inline-block;
+                    margin: auto 0;
+                    padding: 5px;
+                    width: 80px;
+                    background-color: $mainColor;
+                    color: #fff;
+                    font-weight: bold;
+                    border-radius: 10px;
+                    border: none;
+                    cursor: pointer;
+                }
+            }
+        }
     }
 }

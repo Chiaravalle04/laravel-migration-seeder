@@ -19,6 +19,7 @@ return new class extends Migration
             $table->string('agency');
             $table->string('departure_station');
             $table->string('arrival_station');
+            $table->date('departure_date');
             $table->time('departure_time');
             $table->time('arrival_time');
             $table->mediumInteger('train_code');

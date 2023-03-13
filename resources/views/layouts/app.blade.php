@@ -7,15 +7,21 @@
         <!--Favicon-->
         <link rel="shortcut icon" type="image/png" href="{{ Vite::asset('resources/img/laravel.png') }}">
 
-        <title>Laravel - Vite - Sass | Template </title>
+        <title>ScopriTreni</title>
 
         <!--Vite-->
         @vite('resources/js/app.js')
         
     </head>
-    <body class="d-flex jc-center ai-center">
-       
-        @yield('content')
+    <body>
+
+        @include('partials.header')
+
+        <main>
+
+            @yield('content')
+
+        </main>
 
     </body>
 </html>
