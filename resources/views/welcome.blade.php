@@ -51,38 +51,6 @@
             @endforeach
 
         </div>
-        
-        {{-- <table>
-
-            <tr>
-                <th>Agenzia</th>
-                <th>Stazione di partenza</th>
-                <th>Stazione di arrivo</th>
-                <th>Data</th>
-                <th>Partenza</th>
-                <th>Arrivo</th>
-                <th>Codice treno</th>
-                <th>Carrozze</th>
-                <th>In orario</th>
-                <th>Cancellato</th>
-            </tr>
-            
-            @foreach ($trains as $train)
-            <tr>
-                <td>{{ $train->agency }}</td>
-                <td>{{ $train->departure_station }}</td>
-                <td>{{ $train->arrival_station }}</td>
-                <td>{{ $train->departure_date }}</td>
-                <td>{{ $train->departure_time }}</td>
-                <td>{{ $train->arrival_time }}</td>
-                <td>{{ $train->train_code }}</td>
-                <td>{{ $train->number_of_carriages }}</td>
-                <td>{{ $train->in_time }}</td>
-                <td>{{ $train->deleted }}</td>
-            </tr>
-            @endforeach
-
-        </table> --}}
 
     </div>
 
