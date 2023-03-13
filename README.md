@@ -1,22 +1,23 @@
-<h1>Laravel - Vite - Scss | Template</h1>
+- MILESTONE 1: 
+Creiamo una tabella trains e relativa Migration
+- - Ogni treno dovrà avere:
+1. Azienda
+2. Stazione di partenza
+3. Stazione di arrivo
+4. Orario di partenza
+5. Orario di arrivo
+6. Codice Treno
+7. Numero Carrozze
+8. In orario
+9. Cancellato
+È probabile che siano necessarie altre colonne per far funzionare la tabella nel modo corretto.
+Inserite inizialmente i dati tramite PhpMyAdmin.
 
-<h2>Passi da effettuare per UTILIZZARE questo template:</h2>
+- MILESTONE 2:
+Create Model relativo ed un Controller per mostrare nella home page tutti i treni che sono in partenza dalla data odierna.
 
-1. Aprire questa repository su github e cliccare sul pulsante `Use this template` > `Create a new repository`
-2. Clonare la repository appena creata su VS Code
-3. Aprire il terminale
-4. Copiare il file `.env.example` e rinominarlo in `.env`
-5. Eseguire il comando `composer install`
-6. Eseguire il comando `php artisan key:generate`
-7. Eseguire il comando `npm i` o `npm install`
-8. Aprire un secondo terminale
-9. In uno dei due terminali, eseguire il comando `php artisan serve`. Nell'altro, `npm run dev`
+- MILESTONE 3:
+Aggiungiamo un seeder per la classe Train usando FakerPHP.
 
-<h2>Classi SCSS Flex:</h2>
-
-- `.d-flex` = `display: flex;`
-- `.jc-center` = `justify-content: center;`
-- `.jc-space-b` = `justify-content: space-between;`
-- `.jc-space-a` = `justify-content: space-around;`
-- `.ai-center` = `align-items: center;`
-- `.f-wrap` = `flex-wrap: wrap;`
+- BONUS MILESTONE 3:
+Implementare il seeder un file csv.
