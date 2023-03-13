@@ -17,6 +17,21 @@
     margin: 0 auto;
 }
 
+.green {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: green;
+}
+.red {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: red;
+}
+
 // Header
 header {
     height: 80px;
@@ -31,6 +46,17 @@ main {
     min-height: calc(100vh - 80px);
     background-color: $bgColor;
     padding-top: 50px;
+    .symbols {
+        height: 40px;
+        margin-bottom: 50px;
+        p {
+            margin: 0 20px;
+            font-weight: bold;
+            span {
+                margin-right: 5px;
+            }
+        }
+    }
     .container-trains {
         width: 100%;
         .card-train {
@@ -74,6 +100,17 @@ main {
                     border: none;
                     cursor: pointer;
                 }
+            }
+        }
+        .details-train {
+            text-align: center;
+            h3 {
+                color: $mainColor;
+                margin-bottom: 15px;
+                font-size: 20px;
+            }
+            .deleted {
+                color: red;
             }
         }
     }

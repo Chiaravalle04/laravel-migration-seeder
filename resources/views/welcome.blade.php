@@ -4,6 +4,14 @@
 
     <div class="main-container">
 
+        <div class="symbols d-flex jc-center ai-center">
+
+            <p><span class="green"></span> In orario</p> 
+
+            <p><span class="red"></span> In ritardo</p> 
+
+        </div>
+
         <div class="container-trains">
 
             @foreach ($trains as $train)
@@ -42,7 +50,31 @@
 
                     </div>
 
-                    <button>Dettagli</button>
+                    <div class="details-train">
+
+                        <h3>Stato</h3>
+
+                        @if ($train->in_time == 1)
+        
+                        <span class="green"></span>
+
+                        @elseif ($train->deleted == 1)
+                
+                        <h3 class="deleted">CANCELLATO</h3>
+        
+                        @elseif ($train->in_time == 0)
+                            
+                        <span class="red"></span>
+        
+                        @elseif ($train->deleted == 1)
+                
+                        <h3 class="deleted">CANCELLATO</h3>
+        
+                        @endif
+        
+                    </div>
+
+                    <button id="btn-details">Dettagli</button>
 
                 </div>
 
