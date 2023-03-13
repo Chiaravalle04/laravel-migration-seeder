@@ -12,7 +12,13 @@ class PageController extends Controller
 {
     public function index() {
 
-        $trains = Train::where('departure_date', '2023-03-13')->get();
+        /* 
+            MILESTONE 2
+            
+            $trains = Train::where('departure_date', '2023-03-13')->get();
+        */
+
+        $trains = Train::all();
 
         return view('welcome', compact('trains'));
         
